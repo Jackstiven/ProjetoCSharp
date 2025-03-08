@@ -33,5 +33,12 @@ namespace SorveteriaZequinha
             abrir.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmFuncionarios funcionarios = new frmFuncionarios();
+            funcionarios.Show();
+            this.Hide();
+        }
     }
 }
