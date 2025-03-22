@@ -48,3 +48,17 @@ C:\Users\Laboratorio-Info\Documents\ProjetoCSharp\SorveteriaZequinha\obj\Debug\S
 C:\Users\Laboratorio-Info\Documents\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.exe
 C:\Users\Laboratorio-Info\Documents\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.pdb
 C:\Users\Laboratorio-Info\Documents\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmPesquisarFuncionarios.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\bin\Debug\SorveteriaZequinha.exe.config
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\bin\Debug\SorveteriaZequinha.exe
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\bin\Debug\SorveteriaZequinha.pdb
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.csproj.AssemblyReference.cache
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmFuncionarios.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmLogin.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmMenuPrincipal.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmPesquisarFuncionarios.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.frmSplash.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.Properties.Resources.resources
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.csproj.GenerateResource.cache
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.exe
+C:\Users\Laboratorio-Info\Documents\Projeto\ProjetoCSharp\SorveteriaZequinha\obj\Debug\SorveteriaZequinha.pdb

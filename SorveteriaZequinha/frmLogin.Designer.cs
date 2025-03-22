@@ -32,8 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxUsu = new System.Windows.Forms.TextBox();
+            this.txtBoxSenha = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,23 +69,25 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Senha";
             // 
-            // textBox1
+            // txtBoxUsu
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(360, 135);
-            this.textBox1.MaxLength = 50;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 24);
-            this.textBox1.TabIndex = 0;
+            this.txtBoxUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxUsu.Location = new System.Drawing.Point(360, 135);
+            this.txtBoxUsu.MaxLength = 50;
+            this.txtBoxUsu.Name = "txtBoxUsu";
+            this.txtBoxUsu.Size = new System.Drawing.Size(208, 24);
+            this.txtBoxUsu.TabIndex = 0;
+            this.txtBoxUsu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxUsu_KeyDown);
             // 
-            // textBox2
+            // txtBoxSenha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Wingdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.textBox2.Location = new System.Drawing.Point(360, 225);
-            this.textBox2.MaxLength = 12;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 24);
-            this.textBox2.TabIndex = 1;
+            this.txtBoxSenha.Font = new System.Drawing.Font("Wingdings", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.txtBoxSenha.Location = new System.Drawing.Point(360, 225);
+            this.txtBoxSenha.MaxLength = 12;
+            this.txtBoxSenha.Name = "txtBoxSenha";
+            this.txtBoxSenha.Size = new System.Drawing.Size(208, 24);
+            this.txtBoxSenha.TabIndex = 1;
+            this.txtBoxSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxSenha_KeyDown);
             // 
             // button1
             // 
@@ -116,8 +118,8 @@
             this.ClientSize = new System.Drawing.Size(780, 557);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxSenha);
+            this.Controls.Add(this.txtBoxUsu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -139,8 +141,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxUsu;
+        private System.Windows.Forms.TextBox txtBoxSenha;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

@@ -24,14 +24,80 @@ namespace SorveteriaZequinha
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal abrir = new frmMenuPrincipal();
+
+            string Usuario, Senha;
+
+            Usuario = "Classe";
+            Senha = "Mago";
+
+            if (txtBoxSenha.Text.Trim().Equals(Senha) && txtBoxUsu.Text.Trim().Equals(Usuario))
+            {
+            
+                frmMenuPrincipal abrir = new frmMenuPrincipal();
+                abrir.Show();
+                this.Hide();
+            
+            }
+            else 
+            {
+
+                limpeza();
+                erro();
+
+            };
+
+            /*frmMenuPrincipal abrir = new frmMenuPrincipal();
             abrir.Show();
-            this.Hide();
+            this.Hide();*/
+
+        }
+
+        public void erro()
+        {
+
+            MessageBox.Show("Burro. Tenta denovo",
+                    "HAHAHAHHAHAHAAAHHAHAHHAHA BURRO",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+        }
+
+        public void limpeza()
+        {
+
+            txtBoxUsu.Clear();
+            txtBoxSenha.Clear();
+            txtBoxUsu.Focus();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtBoxSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                button1.Focus();
+
+            };
+
+        }
+
+        private void txtBoxUsu_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                txtBoxSenha.Focus();
+
+            };
+
         }
     }
 }
