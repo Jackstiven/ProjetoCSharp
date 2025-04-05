@@ -111,11 +111,10 @@ namespace SorveteriaZequinha
                 mskTBTell.Equals("     -") ||
                 cmbBEstado.Equals("") ||
                 cmbBFuncao.Equals("") ||
-                cmbBUF.Equals("") ||
-                datTPDataDeNascimento.Equals(""))
+                cmbBUF.Equals(""))
             {
 
-                MessageBox.Show
+                MessageBox.Show("Insira um ")
 
             }
         }
