@@ -69,6 +69,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtBNumero = new System.Windows.Forms.TextBox();
             this.txtBComplemento = new System.Windows.Forms.TextBox();
+            this.txtBBairro = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.grpBDadosPessoais.SuspendLayout();
             this.panelBotoes.SuspendLayout();
             this.grpBLocalidade.SuspendLayout();
@@ -403,11 +405,13 @@
             this.grpBLocalidade.Controls.Add(this.label14);
             this.grpBLocalidade.Controls.Add(this.label12);
             this.grpBLocalidade.Controls.Add(this.label15);
+            this.grpBLocalidade.Controls.Add(this.label17);
             this.grpBLocalidade.Controls.Add(this.label16);
             this.grpBLocalidade.Controls.Add(this.label11);
             this.grpBLocalidade.Controls.Add(this.mskTBCEP);
             this.grpBLocalidade.Controls.Add(this.label10);
             this.grpBLocalidade.Controls.Add(this.txtBLogradouro);
+            this.grpBLocalidade.Controls.Add(this.txtBBairro);
             this.grpBLocalidade.Controls.Add(this.txtBNumero);
             this.grpBLocalidade.Controls.Add(this.txtBComplemento);
             this.grpBLocalidade.Controls.Add(this.txtBCidade);
@@ -500,6 +504,24 @@
             this.txtBComplemento.Size = new System.Drawing.Size(235, 24);
             this.txtBComplemento.TabIndex = 15;
             // 
+            // txtBBairro
+            // 
+            this.txtBBairro.Location = new System.Drawing.Point(490, 85);
+            this.txtBBairro.MaxLength = 100;
+            this.txtBBairro.Name = "txtBBairro";
+            this.txtBBairro.Size = new System.Drawing.Size(235, 24);
+            this.txtBBairro.TabIndex = 15;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(436, 88);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 18);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Bairro";
+            this.label17.Click += new System.EventHandler(this.label1_Click);
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,6 +535,7 @@
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Antas Trabalhadoras";
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
             this.grpBDadosPessoais.ResumeLayout(false);
             this.grpBDadosPessoais.PerformLayout();
             this.panelBotoes.ResumeLayout(false);
@@ -564,5 +587,7 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtBBairro;
     }
 }
