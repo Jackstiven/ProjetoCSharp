@@ -23,18 +23,6 @@ namespace SorveteriaZequinha
 
         }
 
-        private void btnConectar_Click(object sender, EventArgs e)
-        {
-
-            MySqlConnection con = new MySqlConnection();
-
-            con.ConnectionString = "";
-            con.Open();
-            MessageBox.Show("DataBase Conectado");
-            con.Close();
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -110,6 +98,18 @@ namespace SorveteriaZequinha
                 txtBoxSenha.Focus();
 
             };
+
+        }
+
+        private void btnConectar_Click_1(object sender, EventArgs e)
+        {
+
+            MySqlConnection con = new MySqlConnection();
+
+            con.ConnectionString = "Server=localhost;Port=3306;Database=dbgelatosjegue;Uid=root;Pwd=''";
+            con.Open();
+            MessageBox.Show("DataBase Conectado");
+            con.Close();
 
         }
     }

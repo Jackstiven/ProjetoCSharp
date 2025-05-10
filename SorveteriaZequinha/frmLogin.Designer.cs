@@ -114,22 +114,21 @@
             // 
             // btnConectar
             // 
-            this.btnConectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConectar.Location = new System.Drawing.Point(360, 48);
+            this.btnConectar.Location = new System.Drawing.Point(360, 30);
             this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(208, 41);
-            this.btnConectar.TabIndex = 2;
+            this.btnConectar.Size = new System.Drawing.Size(208, 47);
+            this.btnConectar.TabIndex = 4;
             this.btnConectar.Text = "&Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
-            this.btnConectar.Click += new System.EventHandler(this.button1_Click);
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click_1);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 557);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnConectar);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBoxSenha);
             this.Controls.Add(this.txtBoxUsu);
