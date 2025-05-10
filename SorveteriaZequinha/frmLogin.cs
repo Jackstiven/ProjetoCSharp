@@ -104,13 +104,11 @@ namespace SorveteriaZequinha
         private void btnConectar_Click_1(object sender, EventArgs e)
         {
 
-            MySqlConnection con = new MySqlConnection();
+            Conexao.obterConexao();
 
-            con.ConnectionString = "Server=localhost;Port=3306;Database=dbgelatosjegue;Uid=root;Pwd=''";
-            con.Open();
             MessageBox.Show("DataBase Conectado");
-            con.Close();
 
+            Conexao.fecharConaxao();
         }
     }
 }

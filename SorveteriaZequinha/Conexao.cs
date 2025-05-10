@@ -32,5 +32,13 @@ namespace SorveteriaZequinha
             return conn;
 
         }
+
+        public static void fecharConaxao()
+        {
+            if(conn != null)
+            {
+                conn.Close();
+            }
+        }
     }
 }
