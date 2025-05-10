@@ -15,6 +15,7 @@ namespace SorveteriaZequinha
         public frmFuncionarios()
         {
             InitializeComponent();
+            desabilitarCampos();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,14 +43,14 @@ namespace SorveteriaZequinha
             this.Hide();
         }
 
-        public void desabilitandoCampos()
+        public void desabilitarCampos()
         {
             txtBNome.Enabled = false;
-            txtBEmail.Enabled = false;
-            txtBLogradouro.Enabled = false;
             txtBCidade.Enabled = false;
             txtBCodigo.Enabled = false;
             txtBComplemento.Enabled = false;
+            txtBEmail.Enabled = false;
+            txtBLogradouro.Enabled = false;
             txtBNumero.Enabled = false;
             mskTBCEP.Enabled = false;
             mskTBCpf.Enabled = false;
@@ -57,10 +58,8 @@ namespace SorveteriaZequinha
             cmbBEstado.Enabled = false;
             cmbBFuncao.Enabled = false;
             cmbBUF.Enabled = false;
-            txtBBairro.Enabled = false;
-
             datTPDataDeNascimento.Enabled = false;
-
+            
             btnAlterar.Enabled = false;
             btnCadastrar.Enabled = false;
             btnExcluir.Enabled = false;
@@ -68,14 +67,15 @@ namespace SorveteriaZequinha
 
         }
 
-        public void habilitandoCampos()
+        private void btnNovo_Click(object sender, EventArgs e)
         {
+
             txtBNome.Enabled = true;
-            txtBEmail.Enabled = true;
-            txtBLogradouro.Enabled = true;
             txtBCidade.Enabled = true;
             txtBCodigo.Enabled = true;
             txtBComplemento.Enabled = true;
+            txtBEmail.Enabled = true;
+            txtBLogradouro.Enabled = true;
             txtBNumero.Enabled = true;
             mskTBCEP.Enabled = true;
             mskTBCpf.Enabled = true;
@@ -83,16 +83,40 @@ namespace SorveteriaZequinha
             cmbBEstado.Enabled = true;
             cmbBFuncao.Enabled = true;
             cmbBUF.Enabled = true;
-            txtBBairro.Enabled = true;
+            datTPDataDeNascimento.Enabled=true;
 
-            datTPDataDeNascimento.Enabled = true;
-
-            btnAlterar.Enabled = false;
+            btnAlterar.Enabled = true;
             btnCadastrar.Enabled = true;
-            btnExcluir.Enabled = false;
+            btnExcluir.Enabled = true;
             btnLimpar.Enabled = true;
-            btnNovo.Enabled = false;
 
+        }
+
+        private void datTPDataDeNascimento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (txtBCidade.Equals("") ||
+                txtBCidade.Equals("") ||
+                txtBCodigo.Equals("") ||
+                txtBComplemento.Equals("") ||
+                txtBEmail.Equals("") ||
+                txtBLogradouro.Equals("") ||
+                txtBNumero.Equals("") ||
+                mskTBCEP.Equals("   .   .") ||
+                mskTBCpf.Equals("   .   .   -") ||
+                mskTBTell.Equals("     -") ||
+                cmbBEstado.Equals("") ||
+                cmbBFuncao.Equals("") ||
+                cmbBUF.Equals(""))
+            {
+
+                MessageBox.Show("Insira um ");
+
+            }
         }
 
         private void frmFuncionarios_Load(object sender, EventArgs e)

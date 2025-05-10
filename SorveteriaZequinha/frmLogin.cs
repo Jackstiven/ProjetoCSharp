@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace SorveteriaZequinha
 {
@@ -19,6 +20,18 @@ namespace SorveteriaZequinha
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection con = new MySqlConnection();
+
+            con.ConnectionString = "";
+            con.Open();
+            MessageBox.Show("DataBase Conectado");
+            con.Close();
 
         }
 
