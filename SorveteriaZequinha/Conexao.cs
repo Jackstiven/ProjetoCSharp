@@ -11,7 +11,7 @@ namespace SorveteriaZequinha
     public class Conexao
     {
 
-        private static string conectionString = "Server=localhost;Port=3306;Database=dbgelatosjegue;Uid=root;Pwd=''";
+        private static string conectionString = "Server=localhost;Port=3306;Database=banco;Uid=root;Pwd=''";
 
         private static MySqlConnection conn = null;
 

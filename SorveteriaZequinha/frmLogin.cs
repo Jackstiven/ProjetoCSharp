@@ -28,10 +28,10 @@ namespace SorveteriaZequinha
 
             string Usuario, Senha;
 
-            Usuario = "Classe";
-            Senha = "Mago";
+            Usuario = txtBoxUsu.Text.Trim();
+            Senha = txtBoxSenha.Text.Trim();
 
-            if (txtBoxSenha.Text.Trim().Equals(Senha) && txtBoxUsu.Text.Trim().Equals(Usuario))
+            if (validarUsu(Usuario,Senha))
             {
             
                 frmMenuPrincipal abrir = new frmMenuPrincipal();
@@ -110,5 +110,36 @@ namespace SorveteriaZequinha
 
             Conexao.fecharConaxao();
         }
+
+        //Criando o método de validar o usuário
+
+        public bool validarUsu(string nome, string senha)
+        {
+
+            MySqlCommand comm = new MySqlCommand();
+
+            comm.CommandText = "SELECT * FROM `usuarios` WHERE " +
+                "Nome = @nome AND " +
+                "Senha = @senha;";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+
+            comm.Parameters.Add("@nome",MySqlDbType.VarChar,50).Value = nome;
+            comm.Parameters.Add("@senha",MySqlDbType.VarChar,50).Value = senha;
+
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+            bool resp = DR.HasRows;
+
+            Conexao.fecharConaxao();
+
+            return resp;
+
+        }
+
     }
 }
